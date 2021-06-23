@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+      
+<head>
+    <title>
+        Protocol and country code of an url.
+    </title>
+</head>
+  
+<body>
+    <h1 style="color: green">
+        Task 3
+    </h1>
+      
+    <b>
+        Protocol and country code of an url
+    </b>
+      
+    <p>Protocol is: <span class="protocol"></span></p>
+    <p>URL is: <span class="url"></span></p>
+    
+      
+    <button onclick="getDetails()">
+        
+        Message
+    </button>
+      
+    <script type="text/javascript">
+        function getDetails() {
+            current_url = "https://web.centria.fi/";
+            url_object = new URL(current_url);
+           
+				alert("tervetuloa");
+			
+            
+        
+  
+            protocol = url_object.protocol;
+            url = url_object.hostname;
+           
+       
+  
+            document.querySelector('.protocol').textContent
+                    = protocol;
+            document.querySelector('.url').textContent
+                    = url;
+        
+        }
+         
+    </script>
+</body>
+  
+</html>        
